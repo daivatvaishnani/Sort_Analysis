@@ -1,0 +1,16 @@
+#!/bin/sh
+
+N=10
+
+while [ $N -lt 648 ];
+do
+  cat "txtfile$N.txt" | /home/yagyansh/Documents/bubble.c >> bubbleop.txt
+  cat "txtfile$N.txt" | /home/yagyansh/Documents/insertion.c >> insertionop.txt
+  cat "txtfile$N.txt" | /home/yagyansh/Documents/merge.c >> mergesortop.txt
+  cat "txtfile$N.txt" | /home/yagyansh/Documents/quicksort.c >> quicksortop.txt
+  cat "txtfile$N.txt" | /home/yagyansh/Documents/selection.c >> selection.txt
+
+  N=$((N+1))
+
+done
+
